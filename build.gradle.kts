@@ -1,5 +1,7 @@
 plugins {
     java
+    `java-library`
+    `maven-publish`
 }
 
 group = "com.github.cc007"
@@ -17,4 +19,12 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("mavenJava") {
+            from(components["java"])
+        }
+    }
 }
