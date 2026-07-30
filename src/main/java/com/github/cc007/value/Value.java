@@ -1,4 +1,4 @@
-package com.github.cc007;
+package com.github.cc007.value;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
